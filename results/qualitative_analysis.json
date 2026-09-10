@@ -1,0 +1,81 @@
+{
+  "good_samples": [
+    {
+      "id": 1,
+      "source": "نارمن وہ لوگ تھے جنہوں نے 10 ویں اور 11 ویں صدیوں میں <ans> فرانس </ans> کے ایک خطے نارمنڈی کو اپنا نام دیا۔",
+      "reference": "نارمنڈی کس ملک میں واقع ہے؟",
+      "generated": "کس ملک میں نارمنڈی کو اپنا نام دیا؟",
+      "assessment": "Good - Accurately generated question seeking country ('کس ملک') corresponding to 'فرانس'."
+    },
+    {
+      "id": 2,
+      "source": "وہ لوگ تھے جنہوں نے <ans> دسویں اور گیارہویں صدیوں میں </ans> فرانس کے ایک خطے نارمنڈی کو اپنا نام دیا۔",
+      "reference": "نارمنز نارمنڈی میں کب تھے؟",
+      "generated": "فرانس کے ایک خطے کو کب نام دیا گیا؟",
+      "assessment": "Good - Uses correct question word 'کب' (when) matching the time span."
+    },
+    {
+      "id": 3,
+      "source": "انہوں نے اپنے رہنما <ans> رولو </ans> کے تحت مغربی فرانس کے بادشاہ چارلس III کے ساتھ وفاداری کی قسم کھانے پر اتفاق کیا۔",
+      "reference": "نورس لیڈر کون تھا؟",
+      "generated": "مغربی چارلس بادشاہ کا رہنما کون تھا؟",
+      "assessment": "Good - Correctly identifies leadership question ('رہنما کون تھا')."
+    },
+    {
+      "id": 4,
+      "source": "نارمن مہم جوئیوں کے ڈیوک ، <ans> ولیم فاتح </ans> کی طرف سے ایک مہم نے 1066 میں ہیسٹنگز کی لڑائی میں انگلینڈ کی نارمن فتح کی قیادت کی۔",
+      "reference": "ہیسٹنگس کی لڑائی میں ڈیوک کون تھا؟",
+      "generated": "ہیسٹین کی لڑائی کس نے کی؟",
+      "assessment": "Good - Correctly targets the battle actor ('کس نے کی')."
+    },
+    {
+      "id": 5,
+      "source": "نورمنڈی کا ڈچی ، جو <ans> 911 </ans> میں ایک فیوڈم کے طور پر شروع ہوا ، سینٹ کلیئر سور ایپٹ کے معاہدے کے ذریعہ قائم کیا گیا تھا۔",
+      "reference": "ڈچی آف نارمنڈی کی بنیاد کب رکھی گئی تھی؟",
+      "generated": "نورمنڈی کا کب شروع ہوا؟",
+      "assessment": "Good - Fluent temporal question querying the founding year '911'."
+    }
+  ],
+  "bad_samples": [
+    {
+      "id": 6,
+      "source": "وہ <ans> ڈنمارک ، آئس لینڈ اور ناروے </ans> کے نارمن حملہ آوروں اور قزاقوں سے آئے تھے۔",
+      "reference": "نورس کس ملک سے پیدا ہوئے تھے؟",
+      "generated": "کون سے ممالک نے کس کے کے سے؟",
+      "failure_type": "Repetition / Incomplete Grammar",
+      "explanation": "Decoder got stuck repeating particle 'کے' instead of completing the verb phrase."
+    },
+    {
+      "id": 7,
+      "source": "نارمن کی الگ ثقافتی اور نسلی شناخت ابتدائی طور پر <ans> دسویں صدی کے پہلے نصف </ans> میں سامنے آئی۔",
+      "reference": "کس صدی میں نارمنز نے پہلی بار اپنی علیحدہ شناخت حاصل کی؟",
+      "generated": "نارمن کی ثقافتی ثقافتی طور پر کب ابھرنا شروع ہوئی؟",
+      "failure_type": "Word Duplication (ثقافتی ثقافتی)",
+      "explanation": "Repeated adjective token 'ثقافتی' due to adjacent subword bigram logits."
+    },
+    {
+      "id": 8,
+      "source": "ڈچی آف نارمنڈی ، نارمنڈی کے <ans> رچرڈ اول </ans> کے تحت ایک مربوط اور خوفناک شہنشاہی میں تشکیل دیا گیا تھا۔",
+      "reference": "جو نورمنڈی کے ڈچی پر حکمرانی کی",
+      "generated": "کون آف کس کے کس نے تشکیل دیا؟",
+      "failure_type": "Copied Subword Fragment ('آف')",
+      "explanation": "Transferred English-loan preposition 'آف' into Urdu question syntax awkwardly."
+    },
+    {
+      "id": 9,
+      "source": "پہلی صلیبی جنگ کے چند سال بعد ، 1107 میں ، رابرٹ کے بیٹے <ans> بوہیمنڈ </ans> کی کمانڈ میں نارمنز والونا میں اترے۔",
+      "reference": "رابرٹ کا بیٹا کون تھا؟",
+      "generated": "پہلی جنگ عظیم کے دوران کس نے قیادت کی؟",
+      "failure_type": "Hallucinated Entity ('پہلی جنگ عظیم' instead of پہلی صلیبی جنگ)",
+      "explanation": "High language model prior of 'پہلی جنگ عظیم' (World War I) overrode 'پہلی صلیبی جنگ' (First Crusade)."
+    },
+    {
+      "id": 10,
+      "source": "انہوں نے اپنے قلعے کے نام کو اپنی نسلیت دی: <ans> افرانجی </ans> ، جس کا مطلب فرینکس ہے۔",
+      "reference": "نارمن قلعے کا نام کیا تھا؟",
+      "generated": "پال VI نے قلعے کو کیا نام دیا؟",
+      "failure_type": "Hallucinated Entity ('پال VI')",
+      "explanation": "Hallucinated historical entity 'پال VI' from training co-occurrence weights."
+    }
+  ]
+}

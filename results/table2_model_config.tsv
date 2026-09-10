@@ -1,0 +1,7 @@
+Property	Value
+Encoder / decoder type	2-layer BiLSTM / 2-layer LSTM with Bahdanau attention
+Layers / embedding / hidden size	2 layers / 256 / 512
+Vocabulary size	8000
+Trainable parameters	27,102,016
+Optimizer, learning rate, schedule	Adam, lr=0.001, ReduceLROnPlateau
+Batch size, epochs, GPU	64, 10, NVIDIA GeForce RTX 4050 Laptop GPU

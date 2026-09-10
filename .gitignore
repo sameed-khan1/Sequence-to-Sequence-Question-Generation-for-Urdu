@@ -1,0 +1,25 @@
+# Virtual environment
+.venv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter files
+.ipynb_checkpoints/
+checkpoints/
+
+# Installed libraries / environment files
+*.egg-info/
+
+# Logs
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+sp_corpus.txt
+
+# OS files
+.DS_Store
+Thumbs.db

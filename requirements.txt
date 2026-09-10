@@ -1,0 +1,7 @@
+﻿torch>=2.0.0
+sentencepiece>=0.1.99
+sacrebleu>=2.3.0
+rouge-score>=0.1.2
+streamlit>=1.25.0
+matplotlib>=3.7.0
+datasets>=2.14.0

@@ -1,0 +1,4 @@
+Metric	Fluency	Relevance	Answerability
+Member 1 (% yes)	100.0%	92.0%	96.0%
+Member 2 (% yes)	62.0%	86.0%	86.0%
+Cohen's kappa	0.00	0.70	0.41

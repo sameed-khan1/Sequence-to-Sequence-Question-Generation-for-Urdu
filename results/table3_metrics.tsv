@@ -1,0 +1,5 @@
+Split	Decoding	BLEU-4	ROUGE-L	PPL	<unk> %
+UQA valid	greedy	4.26	0.2510	74.44	0.10%
+UQA valid	beam (k=3)	4.14	0.2539	74.44	0.28%
+Wiki-UQA	greedy	4.85	0.2396	-	0.43%
+Wiki-UQA	beam (k=3)	5.19	0.2467	-	0.07%

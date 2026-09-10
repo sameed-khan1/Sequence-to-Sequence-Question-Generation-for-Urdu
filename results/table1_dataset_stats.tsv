@@ -1,0 +1,6 @@
+Statistic	Train	Validation	Wiki-UQA
+Rows in raw dataset	124,745	16,824	210
+Answerable rows	83,018	11,169	210
+Pairs after length filter	75,067	10,018	177
+Mean source length	32.59	33.23	31.69
+Mean target length	11.92	12.29	11.42
