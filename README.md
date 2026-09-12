@@ -1,5 +1,8 @@
 # Sequence-to-Sequence Question Generation for Urdu (From Scratch)
 
+**Authors**: Sameed Khan & Zohair Maken  
+**Course**: Generative AI (Fall 2026) — Assignment No. 01  
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)
 ![Architecture](https://img.shields.io/badge/Model-BiLSTM%20%2B%20Bahdanau%20Attention-green.svg)

@@ -23,3 +23,6 @@ sp_corpus.txt
 # OS files
 .DS_Store
 Thumbs.db
+
+# Submission deliverables (blog, poster, linkedin kept locally)
+deliverables/
